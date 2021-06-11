@@ -56,11 +56,65 @@ p {
   align-self: stretch;
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex: 1;
 }
 
 .topbar {
-  align-self: flex-start;
+  /* align-self: flex-start; */
   background-color: yellow;
   align-self: stretch;
+  padding: 10px;
+}
+
+.topbar span {
+  padding: 2px;
+  margin-left: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.center-box {
+  background-color: whitesmoke;
+  margin: 30px 30px;
+  flex: 1;
+  height: 420px;
+  align-self: stretch;
+  border-radius: 15px;
+  display: flex;
+}
+
+.setting-name {
+  background-color: violet;
+  align-self: stretch;
+  width: 180px;
+  padding: 8px;
+  /* border-radius: 15px; */
+}
+
+.setting-name p {
+  font-size: 18px;
+}
+
+.setting-content {
+  background-color: yellow;
+  flex: 1;
+  display: flex;
+}
+
+.close-icon {
+  margin-left: auto;
+  padding: 17px;
+}
+
+.settings-heading {
+  background-color: white;
+  flex: 1;
+  align-self: stretch;
+  margin-left: 100px;
+}
+
+.individual-settings {
+  padding: 0px 20px;
+  margin: 0px 12px 10px 38px;
 }
