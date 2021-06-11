@@ -1,4 +1,66 @@
-.side-bar {
+.container-fluid {
+  display: flex;
+  align-items: flex-end;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.left-side-bar {
+  margin-right: auto;
   background-color: aqua;
+  align-self: stretch;
+  border: 1px solid #dddddd;
+}
+
+.right-side-bar {
+  margin-left: auto;
+  background-color: #ffeedb;
+  align-self: stretch;
+}
+
+.left-icons {
+  color: blueviolet;
+  text-align: center;
+  padding: 14px 13px 13px 13px;
+  margin-top: 1rem;
+  width: 90px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+p {
+  font-size: 13px;
+  margin: 0;
+  padding: 1px 0 0 0;
+}
+
+.right-icons {
+  width: 80px;
+  color: red;
+  text-align: center;
+  padding: 2px;
+  margin-top: 6px;
+}
+
+.profile-pic {
+  border: 40px transparent;
+  height: 40px;
+  width: 40px;
+  background-image: url("../components/pexels-j-u-n-e-1767434.jpg");
+  background-size: cover;
+}
+
+.center-div {
+  background-color: teal;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.topbar {
+  align-self: flex-start;
+  background-color: yellow;
   align-self: stretch;
 }

@@ -1,14 +1,15 @@
 import React from "react";
 import "./Teams.css";
-import Sidebar from "../components/LeftSidebar";
+import LeftSidebar from "../components/LeftSidebar";
+import RightSidebar from "../components/RightSidebar";
+import CenterDiv from "../components/CenterDiv";
 
 function Teams() {
   return (
     <div className="container-fluid">
-      <Sidebar />
-
-      <div className="topbar"></div>
-      <div className=""></div>
+      <LeftSidebar />
+      <CenterDiv />
+      <RightSidebar />
     </div>
   );
 }
