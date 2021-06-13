@@ -8,25 +8,50 @@
 
 .left-side-bar {
   margin-right: auto;
-  background-color: aqua;
+  /* background-color: aqua; */
   align-self: stretch;
-  border: 1px solid #dddddd;
+  background-color: white;
 }
 
 .right-side-bar {
   margin-left: auto;
-  background-color: #ffeedb;
+  /* background-color: #ffeedb; */
   align-self: stretch;
+  box-shadow: -5px 0 20px #dfdfdf;
 }
 
+.webmobi-logo {
+  background-image: url("../components/logo.png");
+  background-size: cover;
+  margin: 12px auto 25px 26px;
+  width: 70px;
+  height: 65px;
+  border-radius: 4px;
+}
 .left-icons {
-  color: blueviolet;
+  /* color: #8f00ff; */
+  color: #6b6b6b;
   text-align: center;
   padding: 14px 13px 13px 13px;
   margin-top: 1rem;
   width: 90px;
   border-style: solid;
   border-radius: 14px;
+  border-color: white;
+}
+
+.left-icons-clicked {
+  color: #8f00ff;
+  text-align: center;
+  padding: 14px 13px 13px 13px;
+  margin-top: 1rem;
+  width: 90px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+.left-icons:hover {
+  color: #8f00ff;
 }
 
 p {
@@ -37,10 +62,11 @@ p {
 
 .right-icons {
   width: 80px;
-  color: red;
+  /* color: red; */
   text-align: center;
   padding: 2px;
   margin-top: 6px;
+  color: #6b6b6b;
 }
 
 .profile-pic {
@@ -52,7 +78,8 @@ p {
 }
 
 .center-div {
-  background-color: teal;
+  /* background-color: teal; */
+  background-color: #e1e8eb;
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -62,9 +89,11 @@ p {
 
 .topbar {
   /* align-self: flex-start; */
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-color: white;
   align-self: stretch;
   padding: 10px;
+  box-shadow: 0 5px 20px #cccccc;
 }
 
 .topbar span {
@@ -75,29 +104,42 @@ p {
 }
 
 .center-box {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  background-color: white;
   margin: 30px 30px;
   flex: 1;
   height: 420px;
   align-self: stretch;
   border-radius: 15px;
   display: flex;
+  box-shadow: 0 0 20px #cccccc;
 }
 
 .setting-name {
-  background-color: violet;
+  /* background-color: violet; */
   align-self: stretch;
   width: 180px;
-  padding: 8px;
+  padding: 8px 0px;
   /* border-radius: 15px; */
 }
 
-.setting-name p {
+.p-before {
+  color: #6b6b6b;
   font-size: 18px;
+  padding: 6px 11px;
+  border-left: 5px solid white;
+}
+.p-after {
+  color: #8f00ff;
+  font-size: 18px;
+  padding: 6px 11px;
+  border-left: 5px solid;
 }
 
 .setting-content {
-  background-color: yellow;
+  /* background-color: yellow; */
+  border-radius: 15px;
+  box-shadow: -5px 0 20px #dfdfdf;
   flex: 1;
   display: flex;
 }
@@ -117,4 +159,22 @@ p {
 .individual-settings {
   padding: 0px 20px;
   margin: 0px 12px 10px 38px;
+}
+
+.save-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: #8f00ff;
+  border-color: #8f00ff;
+  font-size: 15px;
+  width: 120px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #8f00ff;
+  border-color: #8f00ff;
 }
