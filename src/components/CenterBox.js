@@ -16,10 +16,8 @@ function CenterBox() {
         <input
           class="form-check-input"
           type="checkbox"
-          id="flexSwitchCheckDefault"
-          checked={props.checked}
+          id="flexSwitchCheckChecked"
         />
-        {console.log(props.checked)}
       </div>
     );
   }
@@ -65,7 +63,7 @@ function CenterBox() {
           )}
         </div>
         <div className="toggle-switch">
-          <Toggle id="flexSwitchCheckDefault" checked={false} />
+          <Toggle />
         </div>
       </div>
     );
@@ -164,16 +162,9 @@ function CenterBox() {
               Audience Q&A
             </span>
             <div className="toggle-switch-main">
-              <Toggle id="flexSwitchCheckChecked" checked={true} />
+              <Toggle />
             </div>
             <RiArrowDropUpLine size="37px" />
-            {/* <div class="form-check form-switch">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="flexSwitchCheckDefault"
-              />
-            </div> */}
 
             <hr style={{ width: "70%", margin: "8px" }}></hr>
           </div>

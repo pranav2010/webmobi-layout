@@ -10,13 +10,13 @@ function RightSidebar() {
         <div className="online"></div>
       </div>
       <div className="right-icons">
-        <MdSettingsApplications size="30px" />
+        <IoNotificationsCircleSharp size="30px" />
       </div>
       <div className="right-icons">
         <IoIosChatbubbles size="30px" />
       </div>
       <div className="right-icons">
-        <IoNotificationsCircleSharp size="30px" />
+        <MdSettingsApplications size="30px" />
       </div>
     </div>
   );
