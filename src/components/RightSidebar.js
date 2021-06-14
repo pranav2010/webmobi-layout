@@ -6,7 +6,9 @@ import { IoNotificationsCircleSharp } from "react-icons/io5";
 function RightSidebar() {
   return (
     <div className="right-side-bar">
-      <div className="profile-pic"></div>
+      <div className="profile-pic">
+        <div className="online"></div>
+      </div>
       <div className="right-icons">
         <MdSettingsApplications size="30px" />
       </div>

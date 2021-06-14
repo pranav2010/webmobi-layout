@@ -4,15 +4,69 @@ import {
   IoIosCloseCircleOutline,
   IoMdLock,
 } from "react-icons/io";
+import { RiArrowDropUpLine } from "react-icons/ri";
 import details from "./settingdetails";
 
 function CenterBox() {
+  //////////// toggle component
+
+  function Toggle(props) {
+    return (
+      <div class="form-check form-switch" style={{ marginBottom: "0px" }}>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="flexSwitchCheckDefault"
+          checked={props.checked}
+        />
+        {console.log(props.checked)}
+      </div>
+    );
+  }
+
+  ///state of questionn number
+  const [qstnClicked, setQstnclicked] = useState(1);
   // function for individual settings
   function handleDetails(content) {
     return (
       <div className="individual-settings">
-        <p style={{ fontSize: "16px" }}>{content.maintext}</p>
-        <p style={{ fontSize: "12px", color: "#6b6b6b" }}>{content.subtext}</p>
+        <div>
+          <p style={{ fontSize: "16px" }}>{content.maintext} </p>
+          <p style={{ fontSize: "12px", color: "#6b6b6b" }}>
+            {content.subtext}
+          </p>
+          {content.key === 6 && (
+            <div className="question-boxs">
+              <div
+                onClick={() => {
+                  setQstnclicked(1);
+                }}
+                className={qstnClicked === 1 ? "boxs-clicked" : "boxs"}
+              >
+                <p>160</p>
+              </div>
+              <div
+                onClick={() => {
+                  setQstnclicked(2);
+                }}
+                className={qstnClicked === 2 ? "boxs-clicked" : "boxs"}
+              >
+                <p>240</p>
+              </div>
+              <div
+                onClick={() => {
+                  setQstnclicked(3);
+                }}
+                className={qstnClicked === 3 ? "boxs-clicked" : "boxs"}
+              >
+                <p>300</p>
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="toggle-switch">
+          <Toggle id="flexSwitchCheckDefault" checked={false} />
+        </div>
       </div>
     );
   }
@@ -98,11 +152,21 @@ function CenterBox() {
       {/* right side of center box */}
       <div className="setting-content">
         <div className="settings-heading my-4">
-          <div style={{ padding: "10px 30px 0px 30px", color: "#8f00ff" }}>
+          <div
+            style={{
+              padding: "10px 30px 0px 30px",
+              color: "#8f00ff",
+              overflowX: "auto",
+            }}
+          >
             <IoMdChatboxes size="30px" />
             <span style={{ marginLeft: "6px", fontWeight: "bolder" }}>
               Audience Q&A
             </span>
+            <div className="toggle-switch-main">
+              <Toggle id="flexSwitchCheckChecked" checked={true} />
+            </div>
+            <RiArrowDropUpLine size="37px" />
             {/* <div class="form-check form-switch">
               <input
                 class="form-check-input"
@@ -114,7 +178,7 @@ function CenterBox() {
             <hr style={{ width: "70%", margin: "8px" }}></hr>
           </div>
           {details.map(handleDetails)}
-          <div className="save-btn">
+          <div className="save-btn pb-4">
             <button type="button" class="btn btn-primary">
               Save
             </button>

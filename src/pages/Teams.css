@@ -69,12 +69,23 @@ p {
   color: #6b6b6b;
 }
 
+.online {
+  width: 11px;
+  height: 11px;
+  background-color: #8f00ff;
+  border: 2px solid white;
+  border-radius: 50%;
+  /* margin: auto; */
+  transform: translateY(31px);
+}
+
 .profile-pic {
-  border: 40px transparent;
+  margin: 14px auto;
   height: 40px;
   width: 40px;
   background-image: url("../components/pexels-j-u-n-e-1767434.jpg");
   background-size: cover;
+  border-radius: 4px;
 }
 
 .center-div {
@@ -142,6 +153,7 @@ p {
   box-shadow: -5px 0 20px #dfdfdf;
   flex: 1;
   display: flex;
+  overflow-x: auto;
 }
 
 .close-icon {
@@ -159,6 +171,8 @@ p {
 .individual-settings {
   padding: 0px 20px;
   margin: 0px 12px 10px 38px;
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .save-btn {
@@ -177,4 +191,50 @@ p {
 .btn:hover {
   background-color: #8f00ff;
   border-color: #8f00ff;
+}
+
+.question-boxs {
+  margin-top: 12px;
+  display: flex;
+  height: 30px;
+  width: 240px;
+  /* background-color: lightgreen; */
+  justify-content: space-between;
+}
+
+.boxs {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 2.5px;
+  border: 2px solid #8f00ff;
+  color: #8f00ff;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.boxs-clicked {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 2.5px;
+  border: 2px solid #8f00ff;
+  color: white;
+  background-color: #8f00ff;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.toggle-switch-main {
+  display: inline-block;
+  margin: 0px auto 0px 290px;
+  transform: translateY(8px);
+}
+
+.toggle-switch {
+  display: inline-block;
+  margin: 0px 200px 0px auto;
+  transform: translateY(8px);
 }
